@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #191816;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.left-side,
+.right-side {
+  flex: 1;
+}
+.right-side img {
+  max-width: 50vw;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  padding: 40px;
+  margin-bottom: 80px;
+}
+.container-form {
+  background-color: #24221f;
+  border-radius: 4px;
+  padding: 55px 117px;
+  align-self: center;
+  display: flex;
+}
