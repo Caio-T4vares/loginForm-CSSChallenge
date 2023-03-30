@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login form</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="left-side">
+    <header class="header">
+      <img src="./images/logo.svg">
+    </header>
+    <div class="container-form">
+      <form action="">
+        <div class="header-form">
+          <div class="alinhar">
+            <img src="./images/log-in.svg">
+            <span class="header-text">Faça seu login</span>
+          </div>
+          <span class="subtitle">Entre com suas informações de cadastro.</span>
+        </div>
+        <div class="flex">
+          <label for="email">Email:</label>
+          <input class="input" type="email" id="email" name="email">
+        </div>
+        <div class="flex">
+          <label for="senha">Senha:</label>
+          <input class="input" type="password" id="senha" name="senha">
+        </div>
+        <div class="lembrar-esquecer-senha">
+          <input class="check" type="checkbox" name="lembrar-senha" id="lembrar-senha">
+          <label for="lembrar-senha">Lembre-me</label>
+          <a href="/" class="primary">Esqueci minha senha</a>
+        </div>
+        <button>Entrar</button>
+        <span class="primary centralized">Não tem uma conta?<a href="/"> Registre-se</a></span>
+      </form>
+    </div>
+  </div>
+  <div class="right-side">
+    <img src="./images/side-image.jpg">
+  </div>
+</body>
+
+</html>

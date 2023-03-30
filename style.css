@@ -1,32 +1,143 @@
+/*<!--
+   :root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+*/
 body {
-  margin: 0;
+  width: 100vw;
+  height: 100vh;
   padding: 0;
+  margin: 0;
   display: flex;
   background-color: #191816;
+  color: #afb6c2;
+  font-family: "Roboto";
 }
-a {
-  text-decoration: none;
-  color: black;
-}
-.left-side,
-.right-side {
+.right-side,
+.left-side {
   flex: 1;
-}
-.right-side img {
-  max-width: 50vw;
 }
 .left-side {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .header {
   padding: 40px;
-  margin-bottom: 80px;
 }
 .container-form {
-  background-color: #24221f;
-  border-radius: 4px;
-  padding: 55px 117px;
+  flex: 1;
   align-self: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #24221f;
+  border-radius: 4px;
+  gap: 12px;
+  padding: 60px 100px;
+}
+.header-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+.header-text {
+  color: #d4ccb6;
+  margin-left: 4px;
+  font-size: 24px;
+}
+button {
+  background-color: #ffc632;
+  padding: 10px 14px;
+  border: none;
+  margin-top: 4px;
+  border-radius: 4px;
+}
+.primary {
+  color: #ffc632;
+}
+.input {
+  border: 1px solid #868686;
+  border-radius: 4px;
+  background-color: #24221f;
+  padding: 8px;
+}
+input[type="password"] {
+  background-image: url("./images/lock.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 10px;
+  padding-left: 40px;
+  outline: none;
+}
+input[type="password"]:focus {
+  border: 2px solid #ffc632;
+  background-image: url("./images/lock-focus.svg");
+}
+input[type="email"] {
+  background-image: url("./images/mail.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 10px;
+  padding-left: 40px;
+  outline: none;
+}
+input[type="email"]:focus {
+  border: 2px solid #ffc632;
+  background-image: url("./images/mail-focus.svg");
+}
+.check:active {
+  background-color: #ffc632;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px;
+}
+.subtitle {
+  font-size: 16px;
+}
+.alinhar {
+  display: flex;
+  align-items: center;
+}
+.primary.centralized {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #ffc632;
+  font-weight: 900;
+}
+.lembrar-esquecer-senha .primary {
+  margin-left: 25px;
+}
+@media only screen and (max-width: 460px) and (min-width: 390px) {
+  .right-side img {
+    display: none;
+  }
+  form {
+    background-color: #191816;
+    padding: 10px;
+    width: 95vw;
+  }
+  .container-form {
+    display: block;
+  }
+  .header {
+    padding: 20px;
+  }
+  .lembrar-esquecer-senha .primary {
+    margin-left: 140px;
+  }
 }
